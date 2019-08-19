@@ -1,32 +1,36 @@
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:28080/eureka/
-#  instance:
-#    hostname: clientName
 spring:
-  application:
-    name: sc-fund-account
-  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://10.75.229.93:3306/wallet_account?useUnicode=true&characterEncoding=utf-8
-    username: order_t_w
-    password: J_mtpJxVtbF3PJ
-    druid:
-      initial-size: 5
-      min-idle: 5
-      max-active: 20
-      max-wait: 60000
-      time-between-eviction-runs-millis: 60000
-      min-evictable-idle-time-millis: 300000
-      validation-query: SELECT 1 FROM DUAL
-      test-while-idle: true
-      test-on-borrow: false
-      test-on-return: false
-      pool-prepared-statements: true
-      max-pool-prepared-statement-per-connection-size: 20
-      filter: stat,wall,slf4j
+  profiles:
+    active: @env@
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:28080/eureka/
+##  instance:
+##    hostname: clientName
+#spring:
+#  application:
+#    name: sc-fund-account
+#  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    driverClassName: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://10.75.229.93:3306/wallet_account?useUnicode=true&characterEncoding=utf-8
+#    username: order_t_w
+#    password: J_mtpJxVtbF3PJ
+#    druid:
+#      initial-size: 5
+#      min-idle: 5
+#      max-active: 20
+#      max-wait: 60000
+#      time-between-eviction-runs-millis: 60000
+#      min-evictable-idle-time-millis: 300000
+#      validation-query: SELECT 1 FROM DUAL
+#      test-while-idle: true
+#      test-on-borrow: false
+#      test-on-return: false
+#      pool-prepared-statements: true
+#      max-pool-prepared-statement-per-connection-size: 20
+#      filter: stat,wall,slf4j
 mybatis-plus:
   mapper-locations: classpath:mybatis/mapper/*.xml
   type-aliases-package: com.yz.git.sc.fund.account.service.account.domain
