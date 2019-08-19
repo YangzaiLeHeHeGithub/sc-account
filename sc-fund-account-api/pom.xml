@@ -11,5 +11,11 @@
 
     <artifactId>sc-fund-account-api</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>com.yz.git</groupId>
+            <artifactId>sc-fund-account-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>

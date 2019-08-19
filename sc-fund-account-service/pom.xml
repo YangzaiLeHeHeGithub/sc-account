@@ -29,6 +29,10 @@
         </dependency>
         <dependency>
             <groupId>com.yz.git</groupId>
+            <artifactId>sc-fund-account-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.yz.git</groupId>
             <artifactId>sc-fund-account-dao</artifactId>
         </dependency>
         <dependency>
