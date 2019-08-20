@@ -48,3 +48,5 @@ spring:
         allow:
         #黑名单
         deny:
+server:
+  port: 18080

@@ -1,25 +1,22 @@
-package com.yz.git.sc.fund.account.api;
+package com.yz.git.sc.fund.account.service;
 
-import com.yz.git.sc.fund.account.common.message.Message;
 import com.yz.git.sc.fund.account.param.ProductInfo;
 
 import java.util.List;
 
 /**
  * @author xuyang
- * @date 2019/08/19
+ * @date 2019/08/20
  */
-public interface ScFundAccountApi {
+public interface ScFundAccountService {
     /**
      * 测试调用产品部分方法openFeign
      * @return
      */
-    Message<String> tryGetMsg();
+    String tryGetMsg();
     /**
      * 查询基金列表
      * @return
      */
-    Message<List<ProductInfo>> queryProductList();
-
-
+    List<ProductInfo> queryProductList();
 }
