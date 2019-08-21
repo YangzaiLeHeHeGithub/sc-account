@@ -1,5 +1,6 @@
 package com.yz.git.sc.account.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.yz.git.sc.account.api.ScAccountApi;
 import com.yz.git.sc.account.client.ProductClient;
 import com.yz.git.sc.account.common.message.Message;
@@ -49,11 +50,15 @@ public class TryController {
         return response;
     }
     @GetMapping("/api")
+    @HystrixCommand(fallbackMethod = "defaultMethod")
     public String  tryp(){
 
         Message<String> msgStr = scAccountApi.tryGetMsg();
 
         return msgStr.getMessage()+"---"+ msgStr.getData()+"haha";
 
+    }
+    public String defaultMethod(){
+        return "Hystrix......";
     }
 }

@@ -53,4 +53,7 @@ SC-PRODUCT-DEV:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 server:
   port: 18080
+feign:
+  hystrix:
+    enabled: true
 
