@@ -28,6 +28,12 @@
             <groupId>com.yz.git</groupId>
             <artifactId>sc-account-domain</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-core</artifactId>
+            <version>${mybatis-plus.version}</version>
+        </dependency>
+
     </dependencies>
 
 </project>
