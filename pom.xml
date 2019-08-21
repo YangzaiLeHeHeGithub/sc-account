@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<packaging>pom</packaging>
 	<modules>
-		<module>sc-fund-account-service</module>
-		<module>sc-fund-account-dao</module>
-		<module>sc-fund-account-domain</module>
-		<module>sc-fund-account-common</module>
-		<module>sc-fund-account-rpc</module>
-		<module>sc-fund-account-api</module>
+		<module>sc-account-service</module>
+		<module>sc-account-dao</module>
+		<module>sc-account-domain</module>
+		<module>sc-account-common</module>
+		<module>sc-account-rpc</module>
+		<module>sc-account-api</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -18,9 +18,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.yz.git</groupId>
-	<artifactId>sc-fund-account</artifactId>
+	<artifactId>sc-account</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>sc-fund-account</name>
+	<name>sc-account</name>
 	<description>账户系统springCloud重构</description>
 
 	<properties>
@@ -62,17 +62,17 @@
 			</dependency>
 			<dependency>
 				<groupId>com.yz.git</groupId>
-				<artifactId>sc-fund-account-api</artifactId>
+				<artifactId>sc-account-api</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.yz.git</groupId>
-				<artifactId>sc-fund-account-dao</artifactId>
+				<artifactId>sc-account-dao</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.yz.git</groupId>
-				<artifactId>sc-fund-account-domain</artifactId>
+				<artifactId>sc-account-domain</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
