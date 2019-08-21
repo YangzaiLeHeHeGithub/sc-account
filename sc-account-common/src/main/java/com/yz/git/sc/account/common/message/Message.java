@@ -76,7 +76,7 @@ public class Message<D> implements Serializable {
     public void setData(D data) {
         this.data = data;
     }
-
+    @Override
     public String toString() {
         return "Message{result=" + this.result + ", code=" + this.code + ", message='" + this.message + '\'' + ", data=" + this.data + '}';
     }

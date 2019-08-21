@@ -5,10 +5,15 @@ package com.yz.git.sc.account.common.message;
  * @date 2019/08/19
  */
 public enum Result {
+    //成功
     SUCCESS(1),
+    //失败
     FAILED(0),
+    //错误
     ERROR(-1),
+    //
     UPDATEPWD(2),
+    //
     TOKENEXCEPTION(1014);
 
     private int value;

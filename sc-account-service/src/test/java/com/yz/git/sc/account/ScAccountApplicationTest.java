@@ -28,13 +28,13 @@ public class ScAccountApplicationTest {
      @Test
      public void addUser(){
          ScUserInfo userInfo = new ScUserInfo();
-         userInfo.setAddress("北京市朝阳区姚家园广发大厦");
+         userInfo.setAddress("北京市朝阳区姚家园广发大厦02");
          userInfo.setBankNum(312);
          userInfo.setCertExpireTime(new Date());
          userInfo.setBeneficiaryInfo("老王");
          userInfo.setPassword("1223321");
          userInfo.setCertificateType("1");
-         userInfo.setScId(001L);
+         userInfo.setScId(002L);
          scUserInfoMapper.insert(userInfo);
 
 
