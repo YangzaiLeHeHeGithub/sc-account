@@ -1,9 +1,15 @@
 package com.yz.git.sc.account.api.impl;
 
+import com.yz.git.sc.account.api.ScAccountApi;
+import com.yz.git.sc.account.common.message.Message;
+import com.yz.git.sc.account.common.message.Messages;
+import com.yz.git.sc.account.param.ProductInfo;
 import com.yz.git.sc.account.service.ScAccountService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 
 /**
@@ -12,7 +18,7 @@ import org.springframework.stereotype.Service;
  */
 @Slf4j
 @Service
-public class ScAccountApiImpl implements Scaccounta{
+public class ScAccountApiImpl implements ScAccountApi{
     @Autowired
     ScAccountService scAccountService;
     @Override

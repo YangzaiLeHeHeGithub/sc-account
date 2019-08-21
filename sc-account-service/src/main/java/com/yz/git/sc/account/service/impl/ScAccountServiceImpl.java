@@ -1,5 +1,7 @@
 package com.yz.git.sc.account.service.impl;
 
+import com.yz.git.sc.account.client.ProductClient;
+import com.yz.git.sc.account.param.ProductInfo;
 import com.yz.git.sc.account.service.ScAccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

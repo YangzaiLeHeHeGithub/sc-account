@@ -1,6 +1,8 @@
 package com.yz.git.sc.account.controller;
 
+import com.yz.git.sc.account.api.ScAccountApi;
 import com.yz.git.sc.account.client.ProductClient;
+import com.yz.git.sc.account.common.message.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;

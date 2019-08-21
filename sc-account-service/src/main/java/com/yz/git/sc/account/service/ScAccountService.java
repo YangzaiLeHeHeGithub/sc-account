@@ -1,6 +1,8 @@
 package com.yz.git.sc.account.service;
 
 
+import com.yz.git.sc.account.param.ProductInfo;
+
 import java.util.List;
 
 /**
