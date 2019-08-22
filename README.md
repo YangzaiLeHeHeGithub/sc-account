@@ -1,5 +1,5 @@
 # Sc-Account
-基金账户部分SpringCloud重构
+账户部分SpringCloud重构
 
 # 目的
 ## 1、练习SpringCloud
