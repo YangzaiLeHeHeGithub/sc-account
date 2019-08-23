@@ -33,7 +33,7 @@ spring:
 #      filter: stat,wall,slf4j
 mybatis-plus:
   mapper-locations: classpath:mybatis/mapper/*.xml
-  type-aliases-package: com.yz.git.sc.account.service.account.domain
+  type-aliases-package: com.yz.git.sc.account.domain
   configuration:
     cache-enabled: true
     lazy-loading-enabled: true

@@ -8,7 +8,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://10.75.229.93:3306/new_wallet_account?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://10.75.229.93:3306/new_account?useUnicode=true&characterEncoding=utf-8
     username: order_t_w
     password: J_mtpJxVtbF3PJ
     druid:
